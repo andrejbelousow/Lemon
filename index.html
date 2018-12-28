@@ -43,11 +43,14 @@
 
     </ul>
   </header>
-  <div class="page-hello color">
+
+  <div class="page-hello">
+    <div class="hello-dark">
       <div class="wrap hello-contain">
         <h2><span>Hello</span> ! Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur </p>
         <a href="" class="btn">More</a>
+  </div>
   </div>
   </div>
   <div class="color">
@@ -92,9 +95,9 @@
       <li><a href="" class="class">Logo Design</a></li>
     </ul>
     <div class="my-works-grid">
-      <div class="works-item-1 grid-works-1"></div>
-      <!-- <div id="shadow"> -->
-      <div class="works-item-2 grid-works-2">
+      <div class="works-item-1 grid-works-1 item-shadow"></div>
+      <div class="works-item-2 grid-works-2 item-shadow">
+        <div class="shadow">
         <div class="works-item-2-content">
             <div class="grid-text">
             <p>Lorem ipsum dolor sit amet, </p>
@@ -103,13 +106,13 @@
             </div>
         </div>
         </div>
-      <!-- </div> -->
-      <div class="works-item-3 grid-works-3"></div>
-      <div class="works-item-4 grid-works-4"></div>
-      <div class="works-item-5 grid-works-5"></div>
-      <div class="works-item-6 grid-works-6"></div>
-      <div class="works-item-7 grid-works-7"></div>
-      <div class="works-item-8 grid-works-8"></div>
+        </div>
+      <div class="works-item-3 grid-works-3 item-shadow"></div>
+      <div class="works-item-4 grid-works-4 item-shadow"></div>
+      <div class="works-item-5 grid-works-5 item-shadow"></div>
+      <div class="works-item-6 grid-works-6 item-shadow"></div>
+      <div class="works-item-7 grid-works-7 item-shadow"></div>
+      <div class="works-item-8 grid-works-8 item-shadow"></div>
     </div>
     <a href="" class="btn">More</a>
   </div>
@@ -172,15 +175,14 @@
         function(){
           $(this).css("color", "#f1f1f1");
         });
-        $(".class")
         $("span").addClass("color-dark");
-        $(".page-hello").addClass("hello-dark");
+        $(".hello-dark").css("background-color", "rgba(0, 0, 0, 0.75)")
         $(".color").addClass("bg-dark");
         $(".footer, header, body").addClass("footer-dark");
         $(".btn-form, .btn").addClass("bgcolor-dark");
         $(".logo-pos").addClass("logo-pos-dark");
         $(".works-item-2-content").addClass("border-dark");
-        $(".works-item-2").addClass("works-item-2-dark");
+        $(".shadow").css("background-color", "rgba(0, 0, 0, 0.75)");
         $(".twsv-icon-1").addClass("twsv-icon-1-dark");
         $(".twsv-icon-2").addClass("twsv-icon-2-dark");
         $(".twsv-icon-3").addClass("twsv-icon-3-dark");
@@ -210,13 +212,13 @@
         $("p").removeClass("color-gray");
 
         $("span").removeClass("color-dark");
-        $(".page-hello").removeClass("hello-dark");
-        $(".color").removeClass("bg-dark");
         $(".footer, header, body").removeClass("footer-dark");
+        $(".hello-dark").css("background-color", "rgba(0, 0, 0, 0)")
+        $(".color").removeClass("bg-dark");
         $(".btn-form, .btn").removeClass("bgcolor-dark");
         $(".logo-pos").removeClass("logo-pos-dark");
         $(".works-item-2-content").removeClass("border-dark");
-        $(".works-item-2").removeClass("works-item-2-dark");
+        $(".shadow").css("background-color", "rgba(52, 152, 219, 0.75)");
         $(".twsv-icon-1").removeClass("twsv-icon-1-dark");
         $(".twsv-icon-2").removeClass("twsv-icon-2-dark");
         $(".twsv-icon-3").removeClass("twsv-icon-3-dark");
