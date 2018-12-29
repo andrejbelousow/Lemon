@@ -1,5 +1,4 @@
 
-
 $font-stack: 'Open Sans', sans-serif;
 $font-15: 15px;
 $font-16: 16px;
@@ -228,27 +227,18 @@ li {
 
 }
 
+span {
+  color: #3498db;
+}
+
 .hello-dark {
   background-color: rgba(0, 0, 0, 0);
   padding: 178px 0 211px;
   transition: 0.6s;
 }
 
-span {
-  color: #3498db;
-}
-
 .page-twsv {
   padding: 145px 15px 0 15px;
-
-  .twsv-content-grid {
-      display: grid;
-      max-width: 572px;
-      margin: 0 auto;
-      grid-row-gap: 43px;
-      grid-column-gap: 70px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "a b" "a b" "c d" "c d";
 
     .grid-item-1 {
       grid-area: a;
@@ -268,7 +258,7 @@ span {
 
     .twsv-item {
 
-      width: 255px;
+      max-width: 255px;
       line-height: 19px;
 
       div {
@@ -278,8 +268,6 @@ span {
         @extend %h3;
         margin-left: 40px;
       }
-
-
 
       .twsv-icon {
         background-image: url(../image/twsv-icons.png);
@@ -296,14 +284,10 @@ span {
           margin-top: 19px;
           margin-bottom: 25px;
         }
-        }
-
-
-      .twsv-icon-1-dark {
-        background-position: -1px -79px;
-        width: 64px;
-        height: 70px;
       }
+
+
+
 
       .twsv-icon-2 {
         background-position: -76px -12px;
@@ -312,20 +296,8 @@ span {
         display: block;
       }
 
-      .twsv-icon-2-dark {
-        background-position: -76px -82px;
-        width: 62px;
-        height: 70px;
-      }
-
       .twsv-icon-3 {
         background-position: -154px -1px;
-        width: 60px;
-        height: 69px;
-      }
-
-      .twsv-icon-3-dark {
-        background-position: -151px -70px;
         width: 60px;
         height: 69px;
       }
@@ -337,15 +309,18 @@ span {
         height: 69px;
       }
 
-      .twsv-icon-4-dark {
-        background-position: -238px -74px;
-        width: 62px;
-        height: 69px;
-      }
-
     }
 
-  }
+}
+
+.twsv-content-grid {
+    display: grid;
+    max-width: 572px;
+    margin: 0 auto;
+    grid-row-gap: 43px;
+    grid-column-gap: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b" "a b" "c d" "c d";
 }
 
 .page-my-works {
@@ -401,55 +376,55 @@ span {
     @extend %back-img;
     background-image: url(../image/grid-image-1.png);
     background-size: cover;
-    width: 300px;
     height: 339px;
+    width: 300px;
   }
 
   .works-item-3 {
     @extend %back-img;
     background-image: url(../image/grid-image-3.png);
-    width: 300px;
     height: 452px;
+    width: 300px;
   }
 
   .works-item-4 {
     @extend %back-img;
     background-image: url(../image/grid-image-4.png);
     background-size: cover;
-    width: 300px;
     height: 271px;
+    width: 300px;
   }
 
   .works-item-5 {
     @extend %back-img;
     background-image: url(../image/grid-image-5.png);
     background-size: cover;
-    width: 300px;
     height: 271px;
+    width: 300px;
   }
 
   .works-item-6 {
     @extend %back-img;
     background-image: url(../image/grid-image-6.png);
     background-size: cover;
-    width: 300px;
     height: 224px;
+    width: 300px;
   }
 
   .works-item-7 {
     @extend %back-img;
     background-image: url(../image/grid-image-7.png);
     background-size: cover;
-    width: 300px;
     height: 292px;
+    width: 300px;
   }
 
   .works-item-8 {
     @extend %back-img;
     background-image: url(../image/grid-image-8.png);
     background-size: cover;
-    width: 300px;
     height: 407px;
+    width: 300px;
   }
 
   .item-shadow {
@@ -599,7 +574,7 @@ input {
     @extend %flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 34.5%;
+    width: 331.2px;
   }
 
   .social-link-fb svg:hover {
@@ -656,10 +631,36 @@ input {
   fill:#429ad4;
 }
 
+// INPUT-STYLE
+
 .page-info-form input::-webkit-input-placeholder, .page-info-form textarea::-webkit-input-placeholder {color:#c2c2c2;}
 .page-info-form input::-moz-placeholder, .page-info-form textarea::-moz-placeholder {color:#c2c2c2;}
 .page-info-form input:-moz-placeholder, .page-info-form textarea:-moz-placeholder {color:#c2c2c2;}
 .page-info-form input:-ms-input-placeholder, .page-info-form textarea:-ms-input-placeholder {color:#c2c2c2;}
+
+// DARK-THEME
+
+.twsv-icon-1-dark {
+  background-position: -1px -79px;
+  width: 64px;
+  height: 70px;
+}
+
+.twsv-icon-2-dark {
+  background-position: -76px -82px;
+  width: 62px;
+  height: 70px;
+}
+.twsv-icon-3-dark {
+  background-position: -151px -70px;
+  width: 60px;
+  height: 69px;
+}
+.twsv-icon-4-dark {
+  background-position: -238px -74px;
+  width: 62px;
+  height: 69px;
+}
 
 .color-gray {
   color: #f1f1f1;
@@ -709,6 +710,23 @@ input {
   border: 2px solid #ff9800;
 }
 
+// MEDIA
+
+@media (max-width: 970px) {
+  .my-works-grid {
+    grid-template-areas: "a a e e"
+                         "a a c c"
+                         "g g c c"
+                         "h h c c"
+                         "h h d d"
+                         "h h b b"
+                         "f f b b";
+    margin: 25px auto 24px auto;
+    grid-column-gap: 20px;
+
+}
+}
+
 @media (max-width:780px) {
 
   .nav-header {
@@ -723,5 +741,193 @@ input {
 
   .btn-menu {
     display: block;
+  }
+
+  .hello-dark {
+    padding: 66px 0 114px;
+  }
+
+  .page-twsv {
+    padding: 104px 15px 0 15px;
+  }
+
+  .page-info-form {
+    margin-bottom: 76px;
+  }
+
+  .hello-contain h2 {
+    font-size: 33px;
+  }
+
+  .btn {
+    padding: 12px 38px;
+    font-size: 18px;
+  }
+
+  .hello-contain {
+    width: 85%;
+  }
+}
+
+@media (max-width: 640px) {
+  .my-works-grid {
+    grid-template-areas: "a a"
+                         "e e"
+                         "g g"
+                         "c c"
+                         "h h"
+                         "d d"
+                         "f f"
+                         "b b";
+    margin: 25px auto 24px auto;
+
+}
+
+  .twsv-content-grid {
+        grid-column-gap: 30px;
+  }
+
+  .hello-contain h2 {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+
+  .hello-dark {
+    padding: 30px 0 63px;
+  }
+
+  .hello-contain p {
+    margin-bottom: 25px;
+  }
+
+  .page-twsv {
+    padding: 74px 15px 0 15px;
+  }
+
+  .page-info-form div {
+    max-width: 620px;
+    width: 80%;
+  }
+
+  .page-follow {
+    padding-bottom: 46px;
+  }
+
+}
+
+@media (max-width: 512px) {
+  .my-works-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .twsv-content-grid {
+    grid-template-areas: "a a"
+                         "b b"
+                         "c c"
+                         "d d";
+  }
+
+  .twsv-item {
+    margin: 0 auto;
+  }
+
+  .hello-contain h2 {
+    font-size: 25px;
+  }
+
+  .btn {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+
+  .hello-dark {
+    padding: 24px 0 49px;
+  }
+
+  .page-twsv .twsv-item h3, .page-my-works h3, .page-info-form h3, .page-follow h3 {
+    font-size: 23px;
+  }
+
+  .twsv-item p {
+    font-size: 14px;
+  }
+
+  .page-my-works .my-works-nav li {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .page-my-works {
+    margin-bottom: 45px;
+  }
+
+  .page-info-form {
+      margin-bottom: 55px;
+  }
+
+  .page-follow {
+    padding-bottom: 30px;
+  }
+
+  .page-my-works .btn, .btn-form {
+    font-size: 13px;
+    padding: 12px 28px;
+  }
+
+  input, textarea {
+    padding: 16px 12px;
+    font-size: 13px;
+  }
+
+  textarea {
+    min-height: 142px;
+  }
+
+  .btn-menu svg, .rst-switch svg, .switch svg {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .page-follow .follow-social {
+    width: auto;
+    justify-content: space-around;
+  }
+
+  .page-follow .social-link svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .page-my-works .btn, .btn-form {
+    font-size: 11px;
+    padding: 12px 25px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 12px;
+  }
+
+  .hello-contain h2 {
+    font-size: 21px;
+  }
+
+  .page-info-form {
+    margin-bottom: 38px;
+  }
+
+  .page-my-works {
+    margin-bottom: 21px;
+  }
+
+  .hello-contain p {
+    font-size: 13px;
   }
 }
