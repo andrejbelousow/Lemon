@@ -49,8 +49,6 @@ $font-700: 700;
 }
 
 body {
-  position: relative;
-
   line-height: normal;
   font-family: $font-stack;
 
@@ -87,16 +85,35 @@ body {
   margin: 0 auto;
 }
 
-.rst-switch, .switch {
+.rst-switch, .switch, .btn-menu, .btn-close {
   border: none;
   background-color: transparent;
-  position: fixed;
-  top: 16px;
-  right: 30px;
   opacity: 0.75;
+  padding: 0
 }
 
-.rst-switch:focus, .switch:focus {
+.btn-menu {
+  display: none;
+}
+
+.btn-menu svg {
+  width: 45px;
+  height: 45px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+
+
+  span {
+    font-size: 35px;
+    color: rgba(52,152,219,0.50);
+  }
+}
+
+.rst-switch:focus, .switch:focus, .btn-menu, .btn-close {
   outline: none;
 }
 
@@ -121,6 +138,7 @@ header, .nav-header {
 header {
   background-color: #fff;
   padding: 17px 0;
+  position: relative;
 }
 
 .logo {
@@ -134,7 +152,7 @@ header {
 }
 
 .nav-header {
-  flex-basis: 42.5%;
+  flex-basis: 63.5%;
 }
 
 li {
@@ -143,10 +161,46 @@ li {
   color: #585858;
 }
 
+.menu {
+  fill: #000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  max-width: 70%;
+  text-align: center;
+  background-color: rgba(242, 242, 245, 0.90);
+  border: 4px solid rgba(52, 152, 219, 0.25);
+  border-radius: 5px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 34px 15px 20px 15px;
+}
+
+.nav-modal {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+
+
+   li {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}
+
 .page-hello {
   @extend %back-img;
   background-image: url(../image/page-hello.png);
-  transition: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hello-contain {
@@ -177,7 +231,7 @@ li {
 .hello-dark {
   background-color: rgba(0, 0, 0, 0);
   padding: 178px 0 211px;
-  transition: 0.2s;
+  transition: 0.6s;
 }
 
 span {
@@ -653,4 +707,21 @@ input {
 
 .input-focus-dark {
   border: 2px solid #ff9800;
+}
+
+@media (max-width:780px) {
+
+  .nav-header {
+    display: none;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+  }
+
+  .btn-menu {
+    display: block;
+  }
 }
