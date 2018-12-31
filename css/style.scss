@@ -275,42 +275,40 @@ span {
         display: block;
       }
 
-      .twsv-icon-1 {
-        background-position: 0px -9px;
-        width: 64px;
-        height: 70px;
-        display: block;
-        h3 {
-          margin-top: 19px;
-          margin-bottom: 25px;
-        }
       }
-
-
-
-
-      .twsv-icon-2 {
-        background-position: -76px -12px;
-        width: 62px;
-        height: 70px;
-        display: block;
-      }
-
-      .twsv-icon-3 {
-        background-position: -154px -1px;
-        width: 60px;
-        height: 69px;
-      }
-
-
-      .twsv-icon-4 {
-        background-position: -238px -4px;
-        width: 61px;
-        height: 69px;
-      }
-
     }
 
+.twsv-icon-1 {
+  background-position: 0px -9px;
+  width: 64px;
+  height: 70px;
+  display: block;
+  h3 {
+    margin-top: 19px;
+    margin-bottom: 25px;
+  }
+}
+
+.twsv-icon-2 {
+  background-position: -76px -12px;
+  width: 62px;
+  height: 70px;
+  display: block;
+}
+
+.twsv-icon-3 {
+  background-position: -154px -1px;
+  width: 60px;
+  height: 69px;
+  display: block;
+}
+
+
+.twsv-icon-4 {
+  background-position: -238px -4px;
+  width: 61px;
+  height: 69px;
+  display: block;
 }
 
 .twsv-content-grid {
@@ -319,7 +317,6 @@ span {
     margin: 0 auto;
     grid-row-gap: 43px;
     grid-column-gap: 70px;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b" "a b" "c d" "c d";
 }
 
@@ -651,11 +648,13 @@ input {
   width: 62px;
   height: 70px;
 }
+
 .twsv-icon-3-dark {
   background-position: -151px -70px;
   width: 60px;
   height: 69px;
 }
+
 .twsv-icon-4-dark {
   background-position: -238px -74px;
   width: 62px;
